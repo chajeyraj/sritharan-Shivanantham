@@ -55,10 +55,8 @@ export function Hero() {
               Executive Portfolio
             </span>
 
-            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4">
-              <span className="text-text">Mr. Shivanantham</span>
-              <br />
-              <span className="text-gradient">Sritharan</span>
+            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
+              <span className="text-gradient">{siteConfig.name}</span>
             </h1>
 
             <div className="flex flex-wrap items-center gap-3 mb-2">
@@ -103,25 +101,22 @@ export function Hero() {
             <div className="relative">
               <div className="absolute -inset-3 rounded-3xl bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10" />
               <div className="relative w-72 sm:w-80 rounded-3xl glass-strong overflow-hidden border border-primary/10">
-                <div className="relative aspect-[4/5] bg-white">
-                  <picture>
-                    <source srcSet="/portrait.webp" type="image/webp" />
-                    <img
-                      src={siteConfig.portrait}
-                      alt={siteConfig.portraitAlt}
-                      width={320}
-                      height={400}
-                      loading="eager"
-                      fetchPriority="high"
-                      decoding="async"
-                      className="h-full w-full object-cover object-top"
-                    />
-                  </picture>
+                <div className="relative aspect-[4/5] bg-background">
+                  <img
+                    src={siteConfig.portrait}
+                    alt={siteConfig.portraitAlt}
+                    width={320}
+                    height={400}
+                    loading="eager"
+                    fetchPriority="high"
+                    decoding="async"
+                    className="h-full w-full object-cover object-top"
+                  />
                   <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-background via-background/90 to-transparent" />
                 </div>
                 <div className="absolute inset-x-0 bottom-0 p-5 text-center">
                   <p className="font-display text-base sm:text-lg font-semibold text-text">
-                    Mr. Shivanantham Sritharan
+                    {siteConfig.name}
                   </p>
                   <p className="text-primary text-sm mt-1">{siteConfig.title}</p>
                 </div>

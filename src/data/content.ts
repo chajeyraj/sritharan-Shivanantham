@@ -12,7 +12,7 @@ export const siteConfig = {
 }
 
 export const personalInfo = {
-  fullName: 'Shivanathan Sritharan',
+  fullName: 'Mr. Shivanantham Sritharan',
   dateOfBirth: '1977-01-15',
   gender: 'Male',
   nationality: 'Sri Lankan Tamil',

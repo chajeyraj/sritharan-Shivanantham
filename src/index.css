@@ -84,6 +84,55 @@
     }
   }
 
+  .navbar-glass {
+    background: linear-gradient(
+      180deg,
+      rgba(3, 7, 18, 0.88) 0%,
+      rgba(3, 7, 18, 0.78) 100%
+    );
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow:
+      0 4px 30px rgba(0, 0, 0, 0.45),
+      0 1px 0 rgba(255, 255, 255, 0.06) inset;
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    isolation: isolate;
+  }
+
+  .navbar-glass-scrolled {
+    background: linear-gradient(
+      180deg,
+      rgba(3, 7, 18, 0.94) 0%,
+      rgba(3, 7, 18, 0.86) 100%
+    );
+    border-bottom-color: rgba(255, 255, 255, 0.18);
+    box-shadow:
+      0 8px 40px rgba(0, 0, 0, 0.55),
+      0 1px 0 rgba(255, 255, 255, 0.08) inset;
+    backdrop-filter: blur(28px) saturate(180%);
+    -webkit-backdrop-filter: blur(28px) saturate(180%);
+  }
+
+  .navbar-glass-panel {
+    background: linear-gradient(
+      180deg,
+      rgba(3, 7, 18, 0.96) 0%,
+      rgba(3, 7, 18, 0.9) 100%
+    );
+    border-left: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: -8px 0 40px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(28px) saturate(180%);
+    -webkit-backdrop-filter: blur(28px) saturate(180%);
+  }
+
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .navbar-glass,
+    .navbar-glass-scrolled,
+    .navbar-glass-panel {
+      background: rgba(3, 7, 18, 0.97);
+    }
+  }
+
   .glass-reflection {
     position: relative;
     overflow: hidden;
