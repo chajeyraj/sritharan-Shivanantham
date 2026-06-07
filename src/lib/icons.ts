@@ -1,0 +1,50 @@
+import {
+  Award,
+  BadgeCheck,
+  BookMarked,
+  BookOpen,
+  Building2,
+  Calculator,
+  Cpu,
+  Flag,
+  Globe,
+  GraduationCap,
+  Heart,
+  Mail,
+  Medal,
+  Microscope,
+  Monitor,
+  Phone,
+  School,
+  Share2,
+  Star,
+  Users,
+  type LucideIcon,
+} from 'lucide-react'
+
+export const iconMap: Record<string, LucideIcon> = {
+  Award,
+  BadgeCheck,
+  BookMarked,
+  BookOpen,
+  Building2,
+  Calculator,
+  Cpu,
+  Flag,
+  Globe,
+  GraduationCap,
+  Heart,
+  Linkedin: Share2,
+  Mail,
+  Medal,
+  Microscope,
+  Monitor,
+  Phone,
+  School,
+  Star,
+  Users,
+}
+
+export function getIcon(name: string): LucideIcon | null {
+  return iconMap[name] ?? null
+}
