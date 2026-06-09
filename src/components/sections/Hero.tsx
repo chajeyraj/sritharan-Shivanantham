@@ -35,14 +35,7 @@ export function Hero() {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
-      <div
-        className="absolute inset-0 pointer-events-none opacity-40"
-        aria-hidden="true"
-        style={{
-          background:
-            'radial-gradient(circle at 70% 30%, rgba(0,229,168,0.06) 0%, transparent 45%)',
-        }}
-      />
+      <div className="absolute inset-0 pointer-events-none hero-diamond-glow" aria-hidden="true" />
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
